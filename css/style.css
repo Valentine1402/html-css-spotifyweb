@@ -1,4 +1,44 @@
 /* regole generali */
 *{
-border: 1px solid black;
+ margin-left: 0;
+ border-radius: 0;
+ box-sizing:border-box;
+}
+
+/* general section */
+#fluid-container{
+ display: flex;
+ flex-direction: row;
+ border: 1px solid black; /* debug */
+}
+
+/* vertical section */
+
+.flex{
+ border: 1px solid red; /* DEBUg */
+}
+
+.vertical{
+ flex-basis: 18%;
+ height: 800px;
+ background-color: purple; /* DEBUg */
+}
+
+/* orizontal section */
+
+.orizontal{
+ flex-basis: 90%;
+ height: 800px;
+ background-color: green; /* DEBUg */
+}
+
+
+/* footer */
+
+#play{
+ flex-basis: 100%;
+ display: flex;
+ height: 100px;
+ border: 1px solid blue;/* DEBUg */
+ background-color: blue;/* DEBUg */
 }
