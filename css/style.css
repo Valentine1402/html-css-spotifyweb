@@ -73,6 +73,7 @@ nav img{
  overflow-y: scroll;
  display: flex;
  flex-direction: column;
+ padding: 40px;
 }
 
 #pulsante {
@@ -90,21 +91,11 @@ background: black;
 border-radius: 20px;
 }
 
-.na-up{
- flex-direction: row;
- align-items: flex-end;
- height: 70px;
- border: 1px solid yellow;
-}
-
-.na-down{
- height: 70px;
- border: 1px solid yellow;
-}
 .compilation{
  height: 1320px;
  border: 1px solid yellow;
 }
+
 /* footer */
 
 #play{
