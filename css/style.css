@@ -133,3 +133,11 @@ bottom: 0;
 left: 0;
 right: 0;
 }
+
+.rewind{
+ flex-basis: 80%;
+}
+
+.volume{
+ flex-basis: 20%;
+}
