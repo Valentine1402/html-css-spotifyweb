@@ -13,6 +13,9 @@ p{
  color: grey;
 }
 
+h2{
+ color: white;
+}
 span{
  color: grey;
 }
@@ -73,7 +76,7 @@ nav img{
  overflow-y: scroll;
  display: flex;
  flex-direction: column;
- padding: 40px;
+ padding: 30px;
 }
 
 #pulsante {
@@ -93,9 +96,15 @@ border-radius: 20px;
 
 .compilation{
  height: 1320px;
- border: 1px solid yellow;
+ padding-top: 30px;
 }
 
+#my-st{
+ padding-left: 15px;
+}
+.img-fluid{
+ max-width: 150px;
+}
 /* footer */
 
 #play{
