@@ -124,6 +124,7 @@ figure:hover {
 
 #play{
 flex-basis: 100%;
+padding-right: 40px;
 display: flex;
 height: 14vh;
 background-color: #353041;
@@ -138,23 +139,32 @@ right: 0;
  flex-basis: 80%;
 }
 
+.my_list-inline{
+ padding-left: 350px;
+ padding-top:20px;
+ margin-bottom: 0;
+ font-size: 20px;
+ line-height: 4px;
+ word-spacing: 15px;
+}
+
 .volume{
  flex-basis: 30%;
+ padding-top: 35px;
 }
 
 
-#time {
- color: lightgrey;
+.ora {
+ color: grey;
  font-size: 12px;
 }
 
  #timeline {
- width: 60%;
+ width: 80%;
  height: 4px;
  margin-top: 20px;
  margin-left: 5px;
  background: rgba(0, 0, 0, 0.3);
-
 }
 
 #audioplayer{
@@ -171,4 +181,12 @@ right: 0;
  margin-top: -3px;
  background: lightgrey;
  cursor: pointer;
+}
+
+.mini-play{
+ width: 21%;;
+ height: 4px;
+ border:2px solid grey;
+ margin-top:10px;
+ border-radius: 2px;
 }
