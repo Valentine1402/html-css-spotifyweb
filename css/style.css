@@ -139,5 +139,36 @@ right: 0;
 }
 
 .volume{
- flex-basis: 20%;
+ flex-basis: 30%;
+}
+
+
+#time {
+ color: lightgrey;
+ font-size: 12px;
+}
+
+ #timeline {
+ width: 60%;
+ height: 4px;
+ margin-top: 20px;
+ margin-left: 5px;
+ background: rgba(0, 0, 0, 0.3);
+
+}
+
+#audioplayer{
+ display:flex;
+ align-items: flex-end;
+ margin-left: 400px;
+}
+
+#playhead {
+ width: 8px;
+ height: 8px;
+ -webkit-border-radius: 50%;
+ border-radius: 50%;
+ margin-top: -3px;
+ background: lightgrey;
+ cursor: pointer;
 }
