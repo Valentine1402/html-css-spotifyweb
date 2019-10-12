@@ -1,10 +1,17 @@
 
 /*  general */
+@font-face {
+ font-family: 'spotify-circular';
+ src: url("https://open.scdn.co/fonts/CircularSpUIv3T-Light.woff2") format("woff2"), url("https://open.scdn.co/fonts/CircularSpUIv3T-Light.woff") format("woff"), url("https://open.scdn.co/fonts/CircularSpUIv3T-Light.ttf") format("truetype");
+}
+
 *{
 margin-left: 0;
 border-radius: 0;
 box-sizing:border-box;
 }
+
+
 
 li{
 list-style: none;
@@ -31,6 +38,12 @@ a:hover{
  text-decoration: none;
 }
 /* general section */
+main{
+ background-image: linear-gradient(45deg, #000428, #614385);
+ height: calc(100vh - 100px);
+ max-width: 100%;
+ overflow-y: scroll;
+}
 
 #fluid-container{
 display: flex;
@@ -40,15 +53,16 @@ flex-direction: row;
 /* vertical section */
 
 .box{
-flex-basis: 18%;
-height: calc(50%-580px);
-padding: 20px;
+height: calc(100vh - 100px);
+width:15%;
+padding: 0 20px;
 background-color: black;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-overflow-y: scroll;
-
+position:fixed;
+top:0;
+z-index: 200;
 }
 
 #spotify img{
@@ -57,6 +71,9 @@ width: 80%;
 height: 40px;
 }
 
+#spotify a:hover{
+ border-bottom: 2px solid lightgreen;
+}
 nav img{
 filter: invert(100%);
 height: 20px;
@@ -78,27 +95,34 @@ height: 280px;
 .orizontal{
 flex-basis: 90%;
 height: 1500px;
-background-image: linear-gradient(45deg, #000428, #614385);
-overflow-y: scroll;
 display: flex;
 flex-direction: column;
-padding: 30px;
+padding: 40px;
+margin-left: 220px;
+}
+
+.vert_list-inline li:hover{
+  border-bottom: 2px solid lightgreen;
 }
 
 #pulsante {
 outline: none;
 cursor: pointer;
 text-align: center;
-font-weight: 300;
+font-family: inherit;
+font-weight: 1px;
 text-decoration: none;
 color: #fff;
 padding: 7px 27px;
 border: solid 1px grey;
 background: black;
+opacity: 0.6;
 border-radius: 20px;
 margin-bottom: 30px;
 transition:transform 0.3s ease;
 }
+
+
 
 #pulsante:hover {
  transform: scale(1.1);
@@ -110,6 +134,12 @@ height: 1320px;
 padding-top: 30px;
 }
 
+.vert_list-inline li{
+ padding-left: 40px;
+ padding-right: 40px;
+font-family: sans-serif;
+font-size: 13px;
+}
 #my-st{
 padding-left: 15px;
 }
@@ -124,10 +154,11 @@ figure:hover {
 
 /* icons audioplayer */
 #play{
-flex-basis: 100%;
+width: 100%;
+height: 100px;
 padding-right: 40px;
 display: flex;
-height: 14vh;
+
 background-color: #353041;
 position:fixed;
 z-index: 2;
@@ -149,9 +180,6 @@ right: 0;
  word-spacing: 15px;
 }
 
-.fa-play-circle{
- font-size: 30px;
-}
 
 /* timeline */
 #timeline {
@@ -176,6 +204,10 @@ border-radius: 50%;
 margin-top: -3px;
 background: lightgrey;
 cursor: pointer;
+}
+
+.fa-play-circle{
+ font-size: 30px;
 }
 
 .ora {
