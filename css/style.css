@@ -158,7 +158,9 @@ right: 0;
  color: grey;
  font-size: 12px;
 }
-
+.fa-play-circle{
+ font-size: 30px;
+}
  #timeline {
  width: 80%;
  height: 4px;
