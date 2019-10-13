@@ -11,33 +11,22 @@ border-radius: 0;
 box-sizing:border-box;
 }
 
-
-
 li{
 list-style: none;
 }
 
-p{
+p, span, a{
 color: grey;
-}
-
-h2{
-color: white;
-}
-span{
-color: grey;
-}
-
-a{
 text-decoration: none;
-color: gray;
 }
 
-a:hover{
+h2, a:hover{
  color: white;
  text-decoration: none;
 }
+
 /* general section */
+
 main{
  background-image: linear-gradient(45deg, #000428, #614385);
  height: calc(100vh - 100px);
@@ -66,14 +55,14 @@ z-index: 200;
 }
 
 #spotify img{
-filter: invert(100%);
 width: 80%;
 height: 40px;
 }
 
-#spotify a:hover{
+.box a:hover{
  border-bottom: 2px solid lightgreen;
 }
+
 nav img{
 filter: invert(100%);
 height: 20px;
@@ -102,7 +91,7 @@ margin-left: 220px;
 }
 
 .vert_list-inline li:hover{
-  border-bottom: 2px solid lightgreen;
+ border-bottom: 2px solid lightgreen;
 }
 
 #pulsante {
@@ -231,4 +220,69 @@ cursor: pointer;
  border-radius: 2px;
 }
 
+/* media for tablet */
+
+/* footer */
+
+/* media for smartphone */
+@media screen and (max-width: 600px){
+
+/* orizontal section */
+
+.orizontal{
+ margin-top: 0;
+ padding-top: 0;
+}
+
+.vert_list-inline li{
+display: none;
+}
+
+#pulsante{
+display: none;
+}
+/* vertical section */
+.box{
+width: 40%;
+align-items:center;
+height: calc(92vh - 80px);
+max-height: 100%;
+overflow-y: scroll;
+}
+.box, overflow-y{
+ color: purple;
+}
+#vert-down{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+#smarty{
+ width: 100%;
+}
+
+.sp{
+ visibility: hidden;
+}
+/* footer */
+
+#play{
+ position:fixed;
+ z-index: 99;
+ left: 0;
+}
+ .my_list-inline{
+ display: inline;
+ padding-left: 50px;
+ }
+
+.smart_list-inline{
+ visibility: hidden;
+}
+
+#audioplayer, .ora, #timeline {
+ visibility: hidden;
+}
+}
 /* the end */
