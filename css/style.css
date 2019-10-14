@@ -126,7 +126,7 @@ figure{
 }
 
 
-#fluid-container > .orizontal > .compilation > figure > .effect + img:hover{
+#fluid-container > div.orizontal > div.compilation > figure:hover .effect i{
 background-color: #000;
 width: 100%;
 height: 100%;
@@ -142,8 +142,10 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 font-size: 50px;
-transition: 0.4s ease;
 }
+
+
+
 
 .img-fluid{
  max-width: 150px;
