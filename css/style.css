@@ -1,10 +1,18 @@
-
 /*  general rules */
 
 *{
-margin-left: 0;
-border-radius: 0;
-box-sizing:border-box;
+ margin-left: 0;
+ border-radius: 0;
+ box-sizing:border-box;
+}
+
+@font-face {
+ font-family: 'spotify-circular';
+ src: url("https://open.scdn.co/fonts/CircularSpUIv3T-Light.woff2") format("woff2"), url("https://open.scdn.co/fonts/CircularSpUIv3T-Light.woff") format("woff"), url("https://open.scdn.co/fonts/CircularSpUIv3T-Light.ttf") format("truetype");
+}
+
+body{
+ font-family: "spotify-circular";
 }
 
 li{
@@ -18,6 +26,7 @@ text-decoration: none;
 
 h2, a:hover{
  color: white;
+ font-weight: bold;
  text-decoration: none;
 }
 
@@ -27,23 +36,22 @@ main{
  background-image: linear-gradient(45deg, #000428, #614385);
  height: calc(100vh - 100px);
  max-width: 100%;
-
 }
 
 #fluid-container{
-display: flex;
-flex-direction: row;
+ display: flex;
+ flex-direction: row;
 }
 
 /* vertical section */
 
 .box{
-flex-basis: 230px;
-background-color: black;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-overflow-y: auto;
+ flex-basis: 230px;
+ background-color: black;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ overflow-y: auto;
 }
 
 .box a:hover{
@@ -51,13 +59,13 @@ overflow-y: auto;
 }
 
 #spotify img{
-width: 80%;
-height: 40px;
+ width: 80%;
+ height: 40px;
 }
 
 nav img{
-filter: invert(100%);
-height: 20px;
+ filter: invert(100%);
+ height: 20px;
 }
 
 .playlist-list{
@@ -67,7 +75,7 @@ height: 20px;
 }
 
 #linea{
-border-bottom: 1px solid grey;
+ border-bottom: 1px solid grey;
 }
 
 /* orizontal section */
@@ -125,29 +133,10 @@ figure{
  position: relative;
 }
 
-
-#fluid-container > div.orizontal > div.compilation > figure:hover .effect i{
-background-color: #000;
-width: 100%;
-height: 100%;
-position: absolute;
-opacity: 0.8;
-transition: 0.4s ease;
-visibility: visible;
+figure:hover{
+ opacity: 0.4;
+ filter: invert(2);
 }
-
-
-#fluid-container > div.orizontal > div.compilation > figure > .effect i{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-font-size: 50px;
-visibility: hidden;
-}
-
-
-
 
 .img-fluid{
  max-width: 150px;
@@ -157,16 +146,16 @@ visibility: hidden;
 
 /* icons audioplayer */
 #play{
-width: 100%;
-height: 100px;
-padding-right: 40px;
-display: flex;
-background-color: #353041;
-position:fixed;
-z-index: 2;
-bottom: 0;
-left: 0;
-right: 0;
+ width: 100%;
+ height: 100px;
+ padding-right: 40px;
+ display: flex;
+ background-color: #353041;
+ position:fixed;
+ z-index: 2;
+ bottom: 0;
+ left: 0;
+ right: 0;
 }
 
 .rewind{
@@ -185,27 +174,27 @@ right: 0;
 
 /* timeline */
 #timeline {
-width: 450px;
-height: 4px;
-margin-top: 20px;
-margin-left: 5px;
-background: rgba(0, 0, 0, 0.3);
+ width: 450px;
+ height: 4px;
+ margin-top: 20px;
+ margin-left: 5px;
+ background: rgba(0, 0, 0, 0.3);
 }
 
 #audioplayer{
-display:flex;
-align-items: flex-end;
-margin-left: 420px;
+ display:flex;
+ align-items: flex-end;
+ margin-left: 420px;
 }
 
 #playhead {
-width: 8px;
-height: 8px;
--webkit-border-radius: 50%;
-border-radius: 50%;
-margin-top: -3px;
-background: lightgrey;
-cursor: pointer;
+ width: 8px;
+ height: 8px;
+ -webkit-border-radius: 50%;
+ border-radius: 50%;
+ margin-top: -3px;
+ background: lightgrey;
+ cursor: pointer;
 }
 
 .fa-play-circle{
