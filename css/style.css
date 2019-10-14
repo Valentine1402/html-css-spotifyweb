@@ -124,11 +124,8 @@ figure{
  margin-left: 15px;
 }
 
-figure:hover{
- opacity: 0.4;
-}
 
-#fluid-container > div.orizontal > div.compilation > figure:nth-child(2) > img > .effect :hover{
+#fluid-container > .orizontal > .compilation > figure:nth-child(2) > img > .effect:hover{
 background-color: #000;
 width: 100%;
 height: 100%;
