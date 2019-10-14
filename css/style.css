@@ -1,5 +1,6 @@
 
 /*  general rules */
+
 *{
 margin-left: 0;
 border-radius: 0;
@@ -123,8 +124,8 @@ border-bottom: 1px solid grey;
  padding-top: 30px;
 }
 
-#my-st{
- padding-left: 15px;
+.my-st{
+ padding-left: 30px;
 }
 
 figure{
