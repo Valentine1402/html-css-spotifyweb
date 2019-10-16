@@ -55,7 +55,8 @@ main{
 }
 
 .box a:hover{
- border-bottom: 2px solid lightgreen;
+ border-left: 4px solid lightgreen;
+ padding-left: 6px;
 }
 
 #spotify img{
@@ -63,6 +64,10 @@ main{
  height: 40px;
 }
 
+#greenhouse{
+ border-left: 4px solid purple;
+ padding-left: 3px;
+}
 nav img{
  filter: invert(100%);
  height: 20px;
@@ -73,6 +78,7 @@ nav img{
  overflow-y: auto;
  flex-grow: 1;
 }
+
 
 #linea{
  border-bottom: 1px solid grey;
@@ -115,8 +121,9 @@ nav img{
  font-size: 13px;
 }
 
-.vert_list-inline li:hover{
- border-bottom: 2px solid lightgreen;
+.vert_list-inline a:hover{
+ border-bottom: 4px solid #FF1493;
+ max-width: 3px;
 }
 
 .compilation{
@@ -173,9 +180,10 @@ figure:hover{
  color: grey;
 }
 
-#play > div.listen > ul > div > ul > li:nth-child(2) > h5{
- color: lightgrey;
+#anni{
+ color: grey;
 }
+
 .rewind{
  flex-basis: 70%;
 }
